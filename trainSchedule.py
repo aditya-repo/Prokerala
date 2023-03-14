@@ -43,8 +43,6 @@ for each in y:
 allLink = allLinks
 newone = len(y)
 
-
-
 index = 1 + maxRows2
 
 serial = 0 + newone
@@ -136,7 +134,7 @@ for x in allLink[:10]:
 		f.write(x+',')
 		f.close()
 
-	wb.save("trainlist.xlsx")
-	f = open("completedData.txt", "a")
-	f.write(x+',')
-	f.close()
+wb.save("trainlist.xlsx")
+f = open("completedData.txt", "a")
+f.write(x+',')
+f.close()
